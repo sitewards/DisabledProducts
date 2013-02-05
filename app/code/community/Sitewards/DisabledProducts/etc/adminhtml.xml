@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * The adminhtml config file of the Sitewards DisabledProducts extension
+ *
+ * @category    Sitewards
+ * @package     Sitewards_DisabledProducts
+ * @copyright   Copyright (c) 2012 Sitewards GmbH (http://www.sitewards.com/de/)
+ */
+-->
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<sitewards_disabledproducts_config translate="title">
+										<title>Sitewards DisabledProducts - Configuration</title>
+										<sort_order>1000</sort_order>
+									</sitewards_disabledproducts_config>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

@@ -1,0 +1,13 @@
+<?php $_product = $this->getProduct(); ?>
+<?php if (!Mage::helper('sitewards_disabledproducts')->isProductDisabled($_product)): ?>
+<?php
+	echo $this->setTemplate('catalog/product/view/addtocart.phtml')->toHtml();
+?>
+<?php else: ?>
+	<div class="add-to-cart">
+		<?php
+			$sBlockId = Mage::helper('sitewards_disabledproducts')->getDisabledProductsBlock();
+			echo $this->getLayout()->createBlock('cms/block')->setBlockId($sBlockId)->toHtml();
+		?>
+	</div>
+<?php endif; ?>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* The system config file of the Sitewards DisabledProducts extension
+*
+* @category    Sitewards
+* @package     Sitewards_DisabledProducts
+* @copyright   Copyright (c) 2012 Sitewards GmbH (http://www.sitewards.com/de/)
+*/
+-->
+<config>
+	<tabs>
+		<sitewards_disabledproducts_tab translate="label" module="sitewards_disabledproducts">
+			<label>Sitewards Disabled Products</label>
+			<sort_order>1001</sort_order>
+		</sitewards_disabledproducts_tab>
+	</tabs>
+
+	<sections>
+		<sitewards_disabledproducts_config translate="label" module="sitewards_disabledproducts">
+			<label>Configuration</label>
+			<tab>sitewards_disabledproducts_tab</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<sitewards_disabledproducts_general translate="label">
+					<label>General Options</label>
+					<fronted_type>text</fronted_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_ext translate="label">
+							<label>Enable Sitewards "Disabled Products" Extension</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_ext>
+						<disabled_product_block translate="label comment">
+							<label>Replacement cms block</label>
+							<comment>This block will be shown instead of the "add to cart" button</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>sitewards_disabledproducts/system_config_source_cms_block</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</disabled_product_block>
+					</fields>
+				</sitewards_disabledproducts_general>
+			</groups>
+		</sitewards_disabledproducts_config>
+	</sections>
+</config>
