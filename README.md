@@ -18,6 +18,7 @@ Installation instructions
 
 app\design\frontend\base\default\template\catalog\product\list.phtml
 line 60 - 64
+<pre><code>
 -	<?php if($_product->isSaleable()): ?>
 -		<p><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
 -	<?php else: ?>
@@ -35,9 +36,11 @@ line 60 - 64
 +		echo $this->getLayout()->createBlock('cms/block')->setBlockId($sBlockId)->toHtml();
 +		?>
 +	<?php endif; ?>
+</pre></code>
 
 app\design\frontend\base\default\template\catalog\product\compare\list.phtml
 line 67-71
+<pre><code>
 -	<?php if($_item->isSaleable()): ?>
 -		<p><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setPLocation('<?php echo $this->helper('catalog/product_compare')->getAddToCartUrl($_item) ?>', true)"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
 -	<?php else: ?>
@@ -55,9 +58,11 @@ line 67-71
 +		echo $this->getLayout()->createBlock('cms/block')->setBlockId($sBlockId)->toHtml();
 +		?>
 +	<?php endif; ?>
+</pre></code>
 
 app\design\frontend\base\default\template\catalog\product\compare\list.phtml
 line 127-131
+<pre><code>
 -	<?php if($_item->isSaleable()): ?>
 -		<p><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setPLocation('<?php echo $this->helper('catalog/product_compare')->getAddToCartUrl($_item) ?>', true)"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
 -	<?php else: ?>
@@ -75,9 +80,11 @@ line 127-131
 +		echo $this->getLayout()->createBlock('cms/block')->setBlockId($sBlockId)->toHtml();
 +		?>
 +	<?php endif; ?>
+</pre></code>
 
 app\design\frontend\base\default\template\wishlist\item\column\cart.phtml
 line 34-47
+<pre><code>
 -	<div class="add-to-cart-alt">
 -	<?php if ($item->canHaveQty() && $item->getProduct()->isVisibleInSiteVisibility()): ?>
 -		<input type="text" class="input-text qty validate-not-negative-number" name="qty[<?php echo $item->getId() ?>]" value="<?php echo $this->getAddToCartQty($item) * 1 ?>" />
@@ -115,5 +122,6 @@ line 34-47
 +			?>
 +		</div>
 +	<?php endif; ?>
+</pre></code>
 
 contact: http://www.sitewards.com
