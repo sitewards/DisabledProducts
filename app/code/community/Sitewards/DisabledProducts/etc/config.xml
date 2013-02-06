@@ -33,6 +33,17 @@
 			</sitewards_disabledproducts_setup>
 		</resources>
 	</global>
+	<adminhtml>
+		<translate>
+			<modules>
+				<sitewards_disabledproducts>
+					<files>
+						<default>Sitewards_DisabledProducts.csv</default>
+					</files>
+				</sitewards_disabledproducts>
+			</modules>
+		</translate>
+	</adminhtml>
 	<default>
 		<disabled_product_config>
 			<disabled_product_general>
@@ -49,14 +60,5 @@
 				</sitewards_disabledproducts>
 			</updates>
 		</layout>
-		<translate>
-			<modules>
-				<sitewards_disabledproducts>
-					<files>
-						<default>Sitewards_DisabledProducts.csv</default>
-					</files>
-				</sitewards_disabledproducts>
-			</modules>
-		</translate>
 	</frontend>
 </config>
