@@ -1,5 +1,5 @@
-app\code\community\Sitewards\DisabledProducts
-app\design\frontend\base\default\layout\sitewards\disabledproducts.xml app\design\frontend\base\default\layout\sitewards\disabledproducts.xml
-app\design\frontend\base\default\template\sitewards\disabledproducts
-app\etc\modules\Sitewards_DisabledProducts.xml app\etc\modules\Sitewards_DisabledProducts.xml
-app\locale\de_DE\Sitewards_DisabledProducts.csv app\locale\de_DE\Sitewards_DisabledProducts.csv
+/app/code/community/Sitewards/DisabledProducts /app/code/community/Sitewards/DisabledProducts
+/app/design/frontend/base/default/layout/sitewards/disabledproducts.xml /app/design/frontend/base/default/layout/sitewards/disabledproducts.xml
+/app/design/frontend/base/default/template/sitewards/disabledproducts /app/design/frontend/base/default/template/sitewards/disabledproducts
+/app/etc/modules/Sitewards_DisabledProducts.xml /app/etc/modules/Sitewards_DisabledProducts.xml
+/app/locale/de_DE/Sitewards_DisabledProducts.csv /app/locale/de_DE/Sitewards_DisabledProducts.csv
